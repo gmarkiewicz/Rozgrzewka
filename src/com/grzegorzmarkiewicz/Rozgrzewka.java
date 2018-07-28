@@ -1,4 +1,5 @@
 package com.grzegorzmarkiewicz;
+
 import java.util.Scanner;
 
 public class Rozgrzewka {
@@ -70,17 +71,25 @@ public class Rozgrzewka {
         }
 
         for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++) {
-                    if (j == (n / 2 + 1) && i == 0 || i == n) {
-                        System.out.print("*");
-                    } else if (j == ((n / 2 + 1) + i) || j == ((n / 2 + 1) - i)) {
-                        System.out.print("*");
-                    } else {
-                        System.out.print(" ");
-                    }
+            for (int j = 0; j < n; j++) {
+                if (j == (n / 2 + 1) && i == 0 || i == n) {
+                    System.out.print("*");
+                } else if (j == ((n / 2 + 1) + i) || j == ((n / 2 + 1) - i)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
                 }
-                System.out.println();
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+
             }
         }
     }
+
 }
